@@ -4,19 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>홈페이지 개발중입니다.</title>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
 </head>
 <body>
     <div class="container">
         <h1 class="text-center mt-5">홈페이지 개발중입니다.</h1>
         <div id="animation" class="text-center mt-5"></div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.13/lottie.min.js"></script>
 
-    <script src="https://cdn.jsdelivr.net/npm/@lottiefiles/lottie-player@1.2.1/dist/lottie_player.js"></script>
     <script>
         // Lottie 애니메이션 로드 및 재생 설정
         const animation = document.getElementById('animation');
-        const anim = bodymovin.loadAnimation({
+        const anim = lottie.loadAnimation({
             container: animation,
             renderer: 'svg',
             loop: true,
